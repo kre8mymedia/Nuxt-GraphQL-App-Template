@@ -1,0 +1,19 @@
+{
+  "name": "nuxt-graphql",
+  "version": "1.0.0",
+  "description": "nuxt &amp; graphql app",
+  "author": "Ryan Eggleston",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.1-rc.1",
+    "graphql-tag": "^2.10.3",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {}
+}
