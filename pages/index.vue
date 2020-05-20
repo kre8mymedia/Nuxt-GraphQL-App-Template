@@ -5,6 +5,7 @@
       <h1 class="title">
         nuxt-graphql
       </h1>
+      <button @click="handleClick">Test Mutation</button>
       <h2 class="subtitle">
         nuxt &amp; graphql app
       </h2>
@@ -48,6 +49,23 @@ export default {
         }
       }
     }`,
+  },
+  methods: {
+    handleClick() {
+      try {
+        this.$apollo.mutate({
+          // Query
+          mutation: gql`mutation {
+            createUser(name: "Hale Brown", email: "sk8er71091@netscape.net", password: "johnryan92") {
+              id
+              name
+            }
+          }`,
+        })
+      } catch (e) {
+        console.error(e)
+      }
+    }
   },
   components: {
     Logo
