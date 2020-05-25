@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-dark  navbar-dark">
+  <nav id="myNav" class="navbar navbar-expand-lg bg-dark navbar-dark">
     <a class="navbar-brand" href="/">GraphQL Laravel</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -44,8 +44,6 @@
 </template>
 
 <script>
-
-
 export default {
   data() {
     return {
@@ -60,3 +58,11 @@ export default {
 
 }
 </script>
+
+<style>
+  #myNav {
+    background: #00c6ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00c6ff, #0072ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+</style>
